@@ -873,7 +873,7 @@ fit.NB.st <- function(formula, data, offset = NULL, niter = 5000,
 #' 
 #' @export
 ### A function to provide summarized results of predicted counts ###
-sumcounts <- function(counts.post, ID.time, ID.loc,
+sum.counts <- function(counts.post, ID.time, ID.loc,
                       ID.aggre, timeperiod, locs){
   ## INPUTs:
   # counts.post: posterior samples (burn-in samples are discarded) of
