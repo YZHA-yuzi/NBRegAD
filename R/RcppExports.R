@@ -11,19 +11,7 @@ get_count <- function(offset, pred_mat, overdisp_post) {
     .Call(`_NBRegAD_get_count`, offset, pred_mat, overdisp_post)
 }
 
-rcpparma_hello_world <- function() {
-    .Call(`_NBRegAD_rcpparma_hello_world`)
-}
-
-rcpparma_outerproduct <- function(x) {
-    .Call(`_NBRegAD_rcpparma_outerproduct`, x)
-}
-
-rcpparma_innerproduct <- function(x) {
-    .Call(`_NBRegAD_rcpparma_innerproduct`, x)
-}
-
-rcpparma_bothproducts <- function(x) {
-    .Call(`_NBRegAD_rcpparma_bothproducts`, x)
+rcpp_hello <- function() {
+    .Call(`_NBRegAD_rcpp_hello`)
 }
 

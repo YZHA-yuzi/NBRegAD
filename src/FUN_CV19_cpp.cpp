@@ -2,7 +2,9 @@
 #include <Rcpp.h>
 // [[Rcpp::depends(RcppArmadillo)]]
 
+
 using namespace Rcpp;
+
 
 //' @export
 // [[Rcpp::export]]
