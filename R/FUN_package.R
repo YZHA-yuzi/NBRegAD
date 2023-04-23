@@ -867,13 +867,13 @@ fit.NB.st <- function(formula, data, offset = NULL, niter = 5000,
 #' ### obtain posterior mean/sd and credible intervals 
 #' ### for observed counts across week 20-40 
 #' ### at states CA and NY 
-#' sum.counts(counts.post = fit$pred.counts,
+#' sumcounts(counts.post = fit$pred.counts,
 #' ID.aggre = "state", timeperiod = 20:40, locs = c("CA", "NY"),
 #' ID.time = "week", ID.loc = "state")
 #' 
 #' @export
 ### A function to provide summarized results of predicted counts ###
-sum.counts <- function(counts.post, ID.time, ID.loc,
+sumcounts <- function(counts.post, ID.time, ID.loc,
                       ID.aggre, timeperiod, locs){
   ## INPUTs:
   # counts.post: posterior samples (burn-in samples are discarded) of
