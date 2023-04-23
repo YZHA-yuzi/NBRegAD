@@ -4,6 +4,7 @@
 
 using namespace Rcpp;
 
+//' @export
 // [[Rcpp::export]]
 arma::mat get_predvals(arma::mat parm_post,
                        arma::mat X_all,
@@ -21,6 +22,7 @@ arma::mat get_predvals(arma::mat parm_post,
   return out;
 }
 
+//' @export
 // [[Rcpp::export]]
 arma::mat get_count(arma::vec offset,
                     arma::mat pred_mat,
